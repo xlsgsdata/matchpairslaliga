@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Match Paris La Liga</title>
+    <base target="_top">
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body onload="showBoard()">
+	<div class="container">		
+		<div class="header">
+			<div class="top">
+				<div class="topleft">
+					<img class="mobile logo" src="pics/match.png">
+					<img class="widescreen logo" src="pics/match.png">
+					<img class="widescreen laliga" src="pics/LaLiga black transp.png">
+				</div>
+				<div class="topmid">
+					<div class="stats"><label>Pairs:</label><div id="pairs">0</div></div>
+					<div class="stats"><label>Moves:</label><div id="moves">0</div></div>		
+					<div class="stats"><label>Time:</label><div id="timer">00:00</div></div>			
+				</div>
+				<div class="topright">
+					<select id="size" onchange="changeSize()">
+						<option value=4>Small (4x4)</option>
+						<option value=5>Medium (4x5)</option>
+						<option value=6>Large (4x6)</option>
+					</select>
+					<button class="widescreen" onclick="reload()">START</button>	
+					<img class="mobile startlogo" onclick="reload()" src="pics/LaLiga logo only.png">
+				</div>
+			</div>	
+		</div>
+		
+		<div id="main">
+			<div class="ad">
+				<a href="http://www.google.com" target="_blank"><img class="adimg" src="pics/ad.png"></a>
+			</div>
+			<div class="board">
+				<table id="sud">
+				</table>
+			</div>
+		</div>
+	</div>	
+	
+	<footer class="footer_tag">
+		<div class="footer_content">
+			<div class="footer_col">
+				<h3>Navigate</h3>
+				<ul>					
+					<li><a>Predictions</a></li>
+					<li><a>Statistics</a></li>
+					<li><a>Standings</a></li>	
+					<li><a>Results</a></li>	
+				</ul>
+				<br>
+				<h3>Options</h3>
+				<ul>
+					<li><a>Matches</a></li>
+					<li><a>Outcome</a></li>
+					<li><a>Goals</a></li>	
+					<li><a>Cards</a></li>	
+				</ul>
+				<br>				
+			</div>
+						
+			<div class="footer_col">
+				<h3>Leagues</h3>
+				<ul>
+					<li>SPAIN PRIMERA DIVISION</li>
+					<li>ENGLAND PREMIER LEAGUE</li>
+					<li>GERMANY BUNDESLIGA</li>
+					<li>ITALY SERIE A</li>
+					<li>FRANCE LIGUE 1</li>
+					<li>NETHERLANDS EREDIVISIE</li>
+					<li>GREECE SUPER LEAGUE</li>
+					<li>PORTUGAL PRIMEIRA LIGA</li>
+					<li>BELGIUM FIRST DIVISION A</li>
+					<li>CZECH REPUBLIC DIVISION 1</li>						
+					<li>DENMARK SUPERLIGAEN</li>
+					<li>POLAND EKSTRAKLASA</li>
+					<li>SWEDEN ALLSVENSKAN</li>
+					<li>TURKEY SUPERLIG</li>
+				</ul>
+				<br>
+			</div>
+						
+			<div class="footer_col">
+				<h3>Other</h3>
+				<ul>
+					<li><a>About</a></li>
+					<li><a>Contact</a></li>
+					<li><a>Privacy</a></li>	
+				</ul>	
+				<br>
+				<h3>Social</h3>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+			<br>
+		</div>
+		
+		<div class="footer_content">
+			<div class="footer_last">
+				<p>Match Pairs LaLiga © 2022</p>
+			</div>
+		</div>
+		<br>
+	</footer>		
+  </body>
+  <script src="./script.js"></script>
+</html>
