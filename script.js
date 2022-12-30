@@ -60,9 +60,13 @@
 	function changeSize() {
 		let cols = getcols();
 		localStorage.setItem("cols", cols);
-		window.location.reload();
+		reload();
 	}
 	
+	function reload() {
+		window.location.reload();
+	}
+
 	function preventDblclick(el) {
 		el.parentNode.style='transform: rotateY(360deg);';
 		localStorage.setItem("numpos", null);
